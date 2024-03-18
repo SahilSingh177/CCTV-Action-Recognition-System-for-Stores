@@ -11,11 +11,9 @@ This project focuses on recognizing actions in videos, particularly targeting sh
 - **Evaluation**: The trained model is evaluated on both validation and test datasets to assess its generalization performance.
 - **Prediction and Inference**: The model is used to predict actions in video clips, particularly focusing on shoplifting detection in surveillance footage.
 
-### Conclusion
-
-This project showcases the development of a CCTV Action Recognition System for stores, focusing on the critical task of detecting shoplifting incidents in surveillance footage. By employing the sophisticated Inception I3D model, we have achieved significant progress in accurately identifying and classifying actions within video data.
-
 ### Key Metrics and Model Details
+![model](https://github.com/SahilSingh177/CCTV-Action-Recognition-System-for-Stores/assets/96344003/45eb44a3-1cba-4f7d-b64e-cca77ff57c44)
+![image](https://github.com/SahilSingh177/CCTV-Action-Recognition-System-for-Stores/assets/96344003/ec246326-96dd-458b-96f0-097ed826b308)
 
 - **Model Architecture**: Inception I3D
 - **Number of Parameters**: Approximately 3 million
@@ -26,6 +24,20 @@ This project showcases the development of a CCTV Action Recognition System for s
   - Recall for normal behavior: 100%
   - Recall for shoplifting detection: Approximately 77.8%
 
+### Data Source
+The dataset utilized in this project is the UCF-Crime dataset, a widely used benchmark dataset for action recognition tasks in surveillance videos. However, to adapt it for the specific task of shoplifting detection, extensive preprocessing and cleaning were necessary.
+
+### Data Preprocessing
+Given the long duration of the videos in the UCF-Crime dataset, a significant preprocessing effort was undertaken to extract relevant segments containing instances of shoplifting. This involved segmenting the videos into shorter clips focused on the periods of interest, thereby ensuring that the dataset appropriately represents the target behavior.
+
+### Conclusion
+This project showcases the development of a CCTV Action Recognition System for stores, focusing on the critical task of detecting shoplifting incidents in surveillance footage. By employing the sophisticated Inception I3D model, we have achieved significant progress in accurately identifying and classifying actions within video data.
+
+### References
+- https://arxiv.org/abs/1705.07750 (Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset)
+- https://www.tensorflow.org/hub/tutorials/movinet
+- https://paperswithcode.com/task/action-recognition-in-videos
+  
 ### Future Prospects and Use Cases
 
 Moving forward, this system holds immense potential for various applications and advancements:
